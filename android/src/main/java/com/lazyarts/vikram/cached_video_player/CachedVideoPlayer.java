@@ -4,7 +4,7 @@
 
 package com.lazyarts.vikram.cached_video_player;
 
-import static com.google.android.exoplayer2.Player.REPEAT_MODE_ALL;
+import static com.google.android.exoplayer2.Player.REPEAT_MODE_ONE;
 import static com.google.android.exoplayer2.Player.REPEAT_MODE_OFF;
 
 import android.content.Context;
@@ -240,7 +240,7 @@ final class CachedVideoPlayer {
   }
 
   void setLooping(boolean value) {
-    exoPlayer.setRepeatMode(value ? REPEAT_MODE_ALL : REPEAT_MODE_OFF);
+    exoPlayer.setRepeatMode(value ? REPEAT_MODE_ONE : REPEAT_MODE_OFF);
   }
 
   void setVolume(double value) {
